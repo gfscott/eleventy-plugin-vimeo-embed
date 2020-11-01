@@ -27,6 +27,7 @@
   "devDependencies": {
     "ava": "^3.13.0",
     "codecov": "^3.8.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "rome": "^10.0.4-beta"
   }
 }
