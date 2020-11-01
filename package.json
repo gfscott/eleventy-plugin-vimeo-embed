@@ -10,7 +10,14 @@
   ],
   "main": ".eleventy.js",
   "scripts": {
-    "test": "ava"
+    "test": "nyc --reporter=lcov ava",
+    "coverage": "coverage",
+    "lint": "npx rome check"
+  },
+  "ava": {
+    "files": [
+      "!test/inc"
+    ]
   },
   "author": {
     "name": "Graham F. Scott",
