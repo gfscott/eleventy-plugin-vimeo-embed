@@ -10,15 +10,14 @@ const validStrings = require("./inc/validStrings.js");
  */
 
 let expectInlineOptionsTrue = {
-	id: "hIs5StN8J-0",
+	id: "400344311",
 	options: {
 		aspectRatio: "4:3",
 		autoplay: true,
-		closedCaptions: true,
 	},
 };
 let expectInlineOptionsFalse = {
-	id: "hIs5StN8J-0",
+	id: "400344311",
 	options: {},
 };
 

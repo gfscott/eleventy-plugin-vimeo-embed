@@ -1,5 +1,5 @@
 const test = require("ava");
-const {pluginDefaults} = require("../lib/pluginDefaults.js");
+const pluginDefaults = require("../lib/pluginDefaults.js");
 const buildEmbed = require("../lib/buildEmbed.js");
 const extractMatches = require("../lib/extractMatches.js");
 const validStrings = require("./inc/validStrings.js");

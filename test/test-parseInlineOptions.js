@@ -13,19 +13,6 @@ test(
 );
 
 test(
-	"Spot closed captions",
-	(t) => {
-		let str1 = "cc";
-		let str2 = "CC";
-		let expected = {
-			closedCaptions: true,
-		};
-		t.deepEqual(parseInlineOptions(str1), expected);
-		t.deepEqual(parseInlineOptions(str2), expected);
-	},
-);
-
-test(
 	"Spot aspect ratio",
 	(t) => {
 		let str = "4:3";
@@ -78,7 +65,7 @@ test(
  * I'm sure there's a better way to test this for 100% certainty but this
  * is what I could think of at the time ¯\_(ツ)_/¯
  */
-const possibleOptions = ["4:3", "auto", "cc"];
+const possibleOptions = ["4:3", "auto"];
 
 // Function to find all possible permutations of an array of elements
 // https://stackoverflow.com/a/20871714
@@ -108,7 +95,6 @@ allPossibleCombos.forEach((combo, index) => {
 			let expected = {
 				aspectRatio: "4:3",
 				autoplay: true,
-				closedCaptions: true,
 			};
 			t.deepEqual(parseInlineOptions(str), expected);
 		},

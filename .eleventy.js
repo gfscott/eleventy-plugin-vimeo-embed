@@ -4,7 +4,7 @@ const buildEmbedCodeString = require("./lib/buildEmbed.js");
 const pluginDefaults = require("./lib/pluginDefaults.js");
 
 module.exports = function(eleventyConfig, options) {
-	const pluginConfig = Object.assign(pluginDefaults, options);
+	const pluginConfig = Object.assign({}, pluginDefaults, options);
 	eleventyConfig.addTransform(
 		"embedVimeo",
 		async (content, outputPath) => {

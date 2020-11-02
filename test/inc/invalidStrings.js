@@ -1,8 +1,7 @@
 module.exports = [
-	{type: "Incomplete Video ID", str: "https://www.youtube.com/watch?v=hIs5St"},
+	{type: "With prepended text", str: "foo https://vimeo.com/400344311"},
 	{
-		type: "Incorrect YouTube TLD",
-		str: "https://www.youtube.co/watch?v=hIs5StN8J-0",
+		type: "With prepended text, with link",
+		str: 'foo <a href="">https://vimeo.com/400344311</a>',
 	},
-	{type: "Invalid protocol", str: "ftp://www.youtube.com/watch?v=hIs5StN8J-0"},
 ];
